@@ -7,4 +7,8 @@ for i in range(N):
         films[x] += 1
     else:
         films.setdefault(x, 1)
-print(films)    
+list_films = list(films.items())
+list_films.sort(key = lambda i: i[1])
+list_films.reverse()
+for i in list_films:
+    print(i[0], ':', i[1])    
