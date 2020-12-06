@@ -91,7 +91,7 @@ class BlackDragon(Dragon):
         
 class WhiteTroll(Troll):
     def __init__(self):
-        self._health = 100
+        self._health = 50
         self._attack = 5
         self._color = 'белый'
 
@@ -121,7 +121,7 @@ class PinkTroll(Troll):
 
     def question(self):
         x = randint(2,100)
-        self.__quest = 'Раздожите число: ' + str(x) + 'на множители'
+        self.__quest = 'Разложите число: ' + str(x) + ' на множители'
         self.set_answer(Factor(x))
         return self.__quest
 
